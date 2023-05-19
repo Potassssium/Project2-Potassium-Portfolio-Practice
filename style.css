@@ -1,0 +1,165 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap");
+
+:root {
+    --color-1: #8F00FF;
+    --color-2: #636363;
+    --font-color: #ffffff;
+    --small: 1rem;
+    --medium: 1.25rem;
+    --large: 1.75rem;
+    --xlarge: 2rem;
+    --xsmall: 0.75rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    background: black;
+    background-image: url(/Images/Background.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ----------navbar--------- */
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 144;
+    padding-left: 120px;
+    padding-right: 120px;
+    position: relative;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 1px 5px #8F00FF;
+
+}
+
+nav {
+    text-align: left;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: var(--small);
+    list-style-type: none;
+}
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+}
+
+#home {
+    padding: 10px;
+    color: var(--font-color);
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo {
+    text-align: center;
+    padding-top: 20px;
+    position: absolute;
+    transform: translate(50%);
+    right: 50%;
+}
+
+.logo h1 {
+    font-size: var(--xlarge);
+}
+.logo p {
+    font-size: var(--xsmall);
+}
+
+.email-me {
+    border: 1.5px solid var(--font-color);
+    padding: 10px 40px;
+    border-radius: 2px;
+    font-size: small;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+
+
+/* --------body--------- */
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2 {
+    text-align: center;
+    font-weight: 100;
+    padding-top: 40px;
+
+}
+
+.col-2 h1 {
+    font-size: 3.5rem;
+    color: var(--font-color);
+    font-weight: 100;
+}
+.col-2 h2 {
+    font-size: 3.5rem;
+    color: var(--color-1);
+    font-weight: 100;
+
+}
+.col-2 p {
+    font-size: var(--small);
+    color: var(--color-2);
+}
+.btn {
+    text-align: center;
+    font-weight: 100;
+    padding-top: 40px;
+    font-size: var(--small);
+    
+}
+.btn-1 {
+    text-decoration: none;
+    color: var(--color-1);
+    border: 1.5px solid var(--color-1);
+    padding: 10px 40px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+.btn-2 {
+    text-decoration: none;
+    color: var(--font-color);
+    border: 1.5px solid var(--font-color);
+    padding: 10px 40px;
+    border-radius: 2px;
+}
+
+.container p {
+    color: var(--color-2);
+    text-align: center;
+    font-weight: 100;
+    padding-top: 40px;
+}
